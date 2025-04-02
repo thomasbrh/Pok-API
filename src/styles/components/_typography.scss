@@ -1,0 +1,26 @@
+/* typographies */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.title-header,
+.title-big, 
+.title-medium, 
+.title-small,
+.title-section
+.title-footer {
+    color: $color-primary;
+    font-family: $font-primary;
+    line-height: 1.2;
+}
+
+.title-header, .title-big { @include font-size-responsive(38px, 57px, 63px); }
+
+.title-medium { @include font-size-responsive(28px, 43px, 47px); }
+
+.title-small, .title-section { @include font-size-responsive(21px, 32px, 36px); }
+
+.paragraph {
+    @include font-size-responsive(16px, 18px, 20px);
+    @include paragrpah ($color-black);
+}
